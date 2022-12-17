@@ -16,9 +16,7 @@ percentsw <- (waterrights$X.sw/100)
 medianpriority <- waterrights$Median_Priority
 
 #create data frame to run pairs function
-predictors <- c(percentgw, percentsw, medianpriority)
-response <- c(percenttot_hay)
-df <- data.frame(percentgw, percentsw, medianpriority, percenttot_hay)
+df <- data.frame(percentsw, medianpriority, percenttot_hay)
 pairs(df)
 
 #run model for hay
